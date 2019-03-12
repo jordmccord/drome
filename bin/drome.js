@@ -10,6 +10,8 @@ const { colors } = require('../lib/colors');
 const completion = require('../lib/completion');
 const { cmd, task, rest } = args(process.argv);
 
+console.log(cmd, task, rest);
+
 let config;
 let homeConfig = () => { return { tasks: {} }; };
 let projectConfig = () => { return { tasks: {} }; };
